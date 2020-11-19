@@ -1,38 +1,572 @@
-.App {
+/* ============== 
+Author: Md. Masud Rana
+Version:1.5
+Published Date: 19/11/2020
+Website: https://masudpro.com/
+
+================= */
+
+
+/* ============== Global Css ================= */
+li{
+  list-style: none;
+}
+a:hover{
+  text-decoration: none;
+}
+section{
+  padding-top: 100px;
+}
+
+.customButton{
+  height: 45px;
+  width: 150px;
   text-align: center;
+  color: #fff;
+  border: none !important;
+  border-radius: 20px 0px;
+  background: rgb(28,216,186);
+  background: -o-linear-gradient(297deg, rgba(28,216,186,1) 12%, rgba(7,172,236,1) 100%);
+  background: linear-gradient(153deg, rgba(28,216,186,1) 12%, rgba(7,172,236,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1cd8ba",endColorstr="#07acec",GradientType=1); 
+}
+.customHeading{
+  font-family: 'Yeseva One', cursive;
+  font-size: 35px;
+  font-weight: 700;
+  color: #0D052E;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: #7c7c7c;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  
+}
+/* ============== Header Section ================= */
+.topNav{
+}
+.topNav ul li{
+  padding: 0px 10px;
+}
+.topNav ul li a{
+  color: #564244 !important;
+  font-size: 14px;
+  font-weight: 300;
+}
+.topNav ul li .customButton{
+ color: #fff !important;
+ text-align: center;
+ padding-top: 11px;
+ position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active{
+  font-weight: bold;
+  font-weight: 500 !important;
+}
+/* ============== Banner Section ================= */
+.banner{
+  height: 110vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 0px;
+  
+}
+.bannerLineBg{
+  position: absolute;
+  top: 150px;
+  left: -300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+  width: 100%;
+  height: 80vh;
+  background: red;
+  background: url(./Component/image/Path\ 76.png)
+
+}
+.navBg {
+    position: absolute;
+    top: -231px;
+   left: -150px;
+    height: 100%;
+    background: url(./Component/image/Group\ 45@2x.png);
+        background-repeat: repeat;
+        background-size: auto;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.navDot{
+  position: absolute;
+  top: -35px;
+  left: 35%;
+  height: 100%;
+  background: url(./Component/image/Group\ 49.png);
+  width: 100%;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 132px;
+height: 150px;
+background-size: contain;
+background-repeat: no-repeat;
+background-size: contain;
+
+}
+.bannerRightBg{
+position: absolute;
+top: 0px;
+right: -550px;
+background: url(./Component/image/Group\ 46.png);
+height: 100vh;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: bottom left;
+}
+.bannerDot{
+  position: absolute;
+  top: 40%;
+  left: -50px;
+  width: 132px;
+  height: 80px;
+  background: url(./Component/image/Group\ 49.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.studioTop{
+  position: absolute;
+  top: 100px;
+  right: -380px;
+  height: 300px;
+  background: url(./Component/image/STUDIO.png);
+  width: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.studioBottom{
+  position: absolute;
+  bottom: 0px;
+  left: -120px;
+  height: 300px;
+  background: url(./Component/image/STUDIO.png);
+  width: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.blueLight{
+  position: absolute;
+  top: 150px;
+  right: 45%;
+  height: 20px;
+  width: 20px;
+  -webkit-box-shadow: 0px 0px 30px 10px #B59FF7;
+          box-shadow: 0px 0px 30px 10px #B59FF7;
+  border-radius: 50px;
+  background: #b59ff756;
+  -webkit-animation: ring 1s infinite alternate;
+          animation: ring 1s infinite alternate;
+}
+.smallBlueLight{
+  position: absolute;
+  top: 120px;
+  left: 150px;
+  height: 10px;
+  width: 10px;
+  -webkit-box-shadow: 0px 0px 30px 10px #B59FF7;
+          box-shadow: 0px 0px 30px 10px #B59FF7;
+  border-radius: 50px;
+  background: #b59ff756;
+  -webkit-animation: ring 1s infinite alternate;
+          animation: ring 1s infinite alternate;
+}
+.lightBlueLight{
+  position: absolute;
+  bottom: 100px;
+  left: 40%;
+  height: 20px;
+  width: 20px;
+  -webkit-box-shadow: 0px 0px 30px 10px #aaeef3;
+          box-shadow: 0px 0px 30px 10px #aaeef3;
+  border-radius: 50px;
+  background: #aaeef356;
+  -webkit-animation: ring 1s infinite alternate;
+          animation: ring 1s infinite alternate;
+}
+@-webkit-keyframes ring {
+  0%{
+   
+    scale: 1;
+  }
+  100%{
+   
+    scale: 1.5;
+  }
+}
+@keyframes ring {
+  0%{
+   
+    scale: 1;
+  }
+  100%{
+   
+    scale: 1.5;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.banner h1{
+  font-family: 'Yeseva One', cursive;
+  font-size: 70px;
+  font-weight: 700;
+  color: #0D052E;
 }
 
-.App-link {
-  color: #61dafb;
+.banner p{
+  color: #7c7c7c;
+  font-weight: 300;
+}
+/* ============== Three Section ================= */
+.aboutUs{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.aboutUs::after{
+ content: '';
+ position: absolute;
+ top: 200px;
+ right: -700px;
+ width: 100%;
+ height: 200vh;
+ background: url(./Component/image/Group\ 57.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center right;
+ z-index: -1;
+}
+.aboutUs::before{
+  content: '';
+  position: absolute;
+  bottom: 100px;
+  left: -650px;
+  width: 100%;
+  height: 200vh;
+  background: url(./Component/image/Group\ 58.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+ }
+/* ============== Service Section ================= */
+.serviceSec{
+  height: 100%;
+  width: 100%;
+  background: url(./Component/image/Path\ 74.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  z-index: 9999;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.singleService{
+  padding: 10px 10px;
+border-radius: 60px 0px;
+-webkit-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+}
+.singleService:hover{
+  padding: 10px 10px;
+  -webkit-box-shadow: 0px 0px 20px 2px #dbf0f8;
+          box-shadow: 0px 0px 20px 2px #dbf0f8;
+border-radius: 60px 0px;
+background: #ffff;
+z-index: 9999;
+}
+.singleService img{
+  padding-top: 20px;
+  width: 100px;
+}
+.singleService h1{
+  font-size: 18px;
+  font-weight: 700;
+  color: #40285C;
+
+}
+/* ============== Project Section ================= */
+.projectSec{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.projectSec .smallBlueLight{
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  height: 10px;
+  width: 10px;
+  -webkit-box-shadow: 0px 0px 30px 10px #B59FF7;
+          box-shadow: 0px 0px 30px 10px #B59FF7;
+  border-radius: 50px;
+  background: #b59ff756;
+  -webkit-animation: ring 1s infinite alternate;
+          animation: ring 1s infinite alternate;
+}
+.projectSec .lightBlueLight{
+  position: absolute;
+  bottom: 50px;
+  left: 40%;
+  height: 20px;
+  width: 20px;
+  -webkit-box-shadow: 0px 0px 30px 10px #aaeef3;
+          box-shadow: 0px 0px 30px 10px #aaeef3;
+  border-radius: 50px;
+  background: #aaeef356;
+  -webkit-animation: ring 1s infinite alternate;
+          animation: ring 1s infinite alternate;
+}
+
+
+/* ============== Achievement Section ================= */
+.achmtSec{
+background: #FAFFFD;
+z-index: -1;
+}
+.achmtContent{
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  color: #707070;
+  background: #fff;
+  padding: 30px 10px;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-box-shadow: 0px 0px 20px 5px #dbf0f8;
+          box-shadow: 0px 0px 20px 5px #dbf0f8;
+}
+.achmtContent img{
+  width: 50px;
+  
+}
+.achmtContent:hover{
+  border-radius: 0px 60px;
+  padding: 30px 10px;
+  background: rgb(7,172,236);
+  background: -o-linear-gradient(297deg, rgba(7,172,236,1) 0%, rgba(30,220,181,1) 65%);
+  background: linear-gradient(153deg, rgba(7,172,236,1) 0%, rgba(30,220,181,1) 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#07acec",endColorstr="#1edcb5",GradientType=1); 
+z-index: 9999;
+}
+
+.singleAchmt:nth-child(1) .achmtContent{
+  color: #fff;
+  border-radius: 0px 60px;
+  padding: 30px 10px;
+  background: rgb(7,172,236);
+  background: -o-linear-gradient(297deg, rgba(7,172,236,1) 0%, rgba(30,220,181,1) 65%);
+  background: linear-gradient(153deg, rgba(7,172,236,1) 0%, rgba(30,220,181,1) 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#07acec",endColorstr="#1edcb5",GradientType=1); 
+}
+.singleAchmt:nth-child(2) .achmtContent{
+  border-radius: 60px 0px;
+}
+.singleAchmt:nth-child(3) .achmtContent{
+  border-radius: 60px 00px;
+}
+.singleAchmt:nth-child(4) .achmtContent{
+  border-radius: 0px 60px;
+}
+
+
+.achmtHeading{
+  margin-left: 20px;
+}
+.achmtHeading h1{
+font-size: 35px;
+font-weight: 700;
+}
+.achmtHeading h6{
+  font-size: 19px;
+}
+/* ============== Pricing Section ================= */
+
+.priceSec{
+  background: #FAFFFD;
+}
+.singlePrice{
+  padding: 40px 10px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px 2px #dbf0f8;
+          box-shadow: 0px 0px 10px 2px #dbf0f8;
+  border: 2px solid #3cedcc00;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.singlePrice:hover{
+  border: 2px solid #3CEDCE;
+}
+.singlePrice h1{
+  color: #494242;
+font-weight: 700;
+}
+.singlePrice h6{
+  font-size: 20px;
+}
+.priceBorder{
+  width: 60%;
+height: 1.5px;
+background: #63F0D7;
+margin: 15px auto;
+}
+.singlePrice ul{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.singlePrice ul li{
+  padding: 5px;
+font-size: 18px;
+font-weight: 500;
+color: #515151;
+}
+.singlePrice button{
+  margin-top: 30px;
+}
+
+/* ============== Subscribe Section ================= */
+.subscribeSec{
+  background: #FAFFFD;
+}
+.subscribeContent{
+  background: #fff;
+padding: 6px;
+border-radius: 4px;
+-webkit-box-shadow: 0px 0px 20px 10px #dbf0f8;
+        box-shadow: 0px 0px 20px 10px #dbf0f8;
+
+}
+.subscribeContent input{
+  width: 100%;
+  border: 0px solid #00000000 !important;
+  
+}
+.subscribeContent:focus{
+  border: none;
+  -webkit-box-shadow: 0px 0px 0px solid rgba(204, 204, 204, 0) !important;
+          box-shadow: 0px 0px 0px solid rgba(204, 204, 204, 0) !important;
+  
+}
+
+.subscribeContent button{
+  padding-top: 5px;
+  height: 45px;
+  width: 150px;
+  color: #fff;
+  border: 0px solid #00000000 !important;
+  border-radius: 4px;
+  background: rgb(28,216,186);
+  background: -o-linear-gradient(297deg, rgba(28,216,186,1) 12%, rgba(7,172,236,1) 100%);
+  background: linear-gradient(153deg, rgba(28,216,186,1) 12%, rgba(7,172,236,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1cd8ba",endColorstr="#07acec",GradientType=1); 
+  
+}
+
+/* ============== Footer Section ================= */
+
+.footer{
+  background: #FAFFFD;
+}
+.footerLogo{
+  width: 120px;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+.footer ul{
+
+}
+.footer ul li{
+  padding: 5px;
+
+}
+.footer ul li a{
+  color: #353535;
+  font-weight: 500;
+
+}
+.footer ul li a:hover{
+
+}
+
+
+@media (max-width: 767px){
+  body{
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .customHeading{
+    font-size: 30px;
   }
+  .topNav ul li .customButton {
+    margin: 0 auto;
+  }
+  .banner{
+    height: 100%;
+  }
+  .bannerLineBg, .bannerRightBg, .bannerDot, .studioTop, .studioBottom, .blueLight, .lightBlueLight{
+    display: none;
+  }
+  .banner h1{
+    font-size: 50px;
+  }
+  .serviceSec{
+    height: 100%;
+    width: 100%;
+    background: none;
+  }
+  .singleService:hover{
+    padding: 10px 10px;
+    -webkit-box-shadow: 0px 0px 20px 2px #dbf0f800;
+            box-shadow: 0px 0px 20px 2px #dbf0f800;
+  border-radius: 60px 0px;
+  background: rgba(255, 255, 255, 0);
+  z-index: 9999;
+  }
+  .serviceContent{
+    padding: 10px 10px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 20px 2px #dbf0f8;
+            box-shadow: 0px 0px 20px 2px #dbf0f8;
+            
+  border-radius: 60px 0px;
+  }
+ 
+  
+  .footer ul{
+    margin: 0px !important;
+    padding: 0px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 575px){
+  .banner h1{
+    font-size: 35px;
+  }
+  .customHeading{
+    font-size: 22px;
+  }
+
 }
