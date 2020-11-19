@@ -12,8 +12,6 @@ const AboutUs = () => {
       <Service></Service>
       <Project></Project>
       <Achievement></Achievement>
-      <Pricing></Pricing>
-      <Subscribe></Subscribe>
         </div>
     );
 };

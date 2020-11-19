@@ -3,6 +3,7 @@ import Banner from './Component/Banner/Banner';
 import Subscribe from './Component/Subscribe/Subscribe';
 import Footer from './Component/Footer/Footer';
 import AboutUs from './Component/AboutUs/AboutUs';
+import Pricing from './Component/Pricing/Pricing';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       
       <Banner></Banner>
       <AboutUs></AboutUs>
+      <Pricing></Pricing>
+      <Subscribe></Subscribe>
       <Footer></Footer>
     </div>
   );

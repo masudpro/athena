@@ -241,7 +241,7 @@ background-position: bottom left;
   width: 100%;
   overflow: hidden;
 }
-.aboutUs::after{
+.aboutUs::before{
  content: '';
  position: absolute;
  top: 200px;
@@ -252,20 +252,8 @@ background-position: bottom left;
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center right;
- z-index: -1;
 }
-.aboutUs::before{
-  content: '';
-  position: absolute;
-  bottom: 100px;
-  left: -650px;
-  width: 100%;
-  height: 200vh;
-  background: url(./Component/image/Group\ 58.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom left;
- }
+
 /* ============== Service Section ================= */
 .serviceSec{
   height: 100%;
@@ -405,7 +393,23 @@ font-weight: 700;
 
 .priceSec{
   background: #FAFFFD;
+  position: relative;
+  width:100%;
+  height: 100%;
 }
+
+.priceSec::before{
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -550px;
+  width: 100%;
+  height: 150vh;
+  background: url(./Component/image/Group\ 58.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+ }
 .singlePrice{
   padding: 40px 10px;
   background: #fff;
