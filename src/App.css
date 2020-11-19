@@ -166,12 +166,12 @@ background-position: bottom left;
   position: absolute;
   top: 150px;
   right: 45%;
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   -webkit-box-shadow: 0px 0px 30px 10px #B59FF7;
           box-shadow: 0px 0px 30px 10px #B59FF7;
   border-radius: 50px;
-  background: #b59ff756;
+  background: #b59ff78e;
   -webkit-animation: ring 1s infinite alternate;
           animation: ring 1s infinite alternate;
 }
@@ -184,7 +184,7 @@ background-position: bottom left;
   -webkit-box-shadow: 0px 0px 30px 10px #B59FF7;
           box-shadow: 0px 0px 30px 10px #B59FF7;
   border-radius: 50px;
-  background: #b59ff756;
+  background: #b59ff78e;
   -webkit-animation: ring 1s infinite alternate;
           animation: ring 1s infinite alternate;
 }
@@ -197,18 +197,20 @@ background-position: bottom left;
   -webkit-box-shadow: 0px 0px 30px 10px #aaeef3;
           box-shadow: 0px 0px 30px 10px #aaeef3;
   border-radius: 50px;
-  background: #aaeef356;
+  background: #aaeef39f;
   -webkit-animation: ring 1s infinite alternate;
           animation: ring 1s infinite alternate;
 }
 @-webkit-keyframes ring {
   0%{
-   
+    -webkit-box-shadow: 0px 0px 10px 2px #aaeef3;
+          box-shadow: 0px 0px 10px 2px #aaeef3;
     scale: 1;
   }
   100%{
-   
-    scale: 1.5;
+    -webkit-box-shadow: 0px 0px 30px 10px #aaeef3;
+          box-shadow: 0px 0px 30px 10px #aaeef3;
+    scale: 2.5;
   }
 }
 @keyframes ring {
